@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Landing from "./screens/Landing.jsx";
+import ServerError from "./screens/ServerError";
+import Forbidden from "./screens/Forbidden";
+import NotFound from "./screens/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Landing />} />
+        <Route exact path="/50x" element={<ServerError />} />
+        <Route exact path="/403" element={<Forbidden />} />
+        <Route exact path="/404" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 
