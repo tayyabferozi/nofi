@@ -7,10 +7,15 @@ a:not([href]):not([class]) {
   color: #777777;
   font-family: arial;
   text-align: center;
+  height: 100vh;
+  background-color: #fff;
+
   h1 {
     font-size: 180px;
     color: #99a7af;
     margin: 70px 0 0 0;
+    line-height: initial !important;
+    font-weight: 600 !important;
   }
   h2 {
     color: #de6c5d;
@@ -25,13 +30,16 @@ a:not([href]):not([class]) {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    padding-top: 30px;
   }
   div {
     width: 320px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  a {
+    text-decoration: underline !important;
   }
   a:link {
     color: #34536a;

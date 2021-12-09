@@ -7,12 +7,16 @@ a:not([href]):not([class]) {
   color: #777777;
   font-family: arial;
   text-align: center;
+  height: 100vh;
+  background-color: #fff;
 }
 
 #error-page h1 {
   font-size: 180px;
   color: #99a7af;
   margin: 70px 0 0 0;
+  line-height: initial !important;
+  font-weight: 600 !important;
 }
 
 #error-page h2 {
@@ -29,7 +33,7 @@ a:not([href]):not([class]) {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 #error-page div {
@@ -37,6 +41,10 @@ a:not([href]):not([class]) {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+#error-page a {
+  text-decoration: underline !important;
 }
 
 #error-page a:link {
@@ -56,6 +64,6 @@ a:not([href]):not([class]) {
 }
 
 .footer {
-  padding-top: 100px;
+  padding-top: 1000px;
 }
 /*# sourceMappingURL=styles.css.map */
